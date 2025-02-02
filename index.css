@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: navy;
+    background-color: rgb(3, 3, 44);
     color:white;
 }
 .container{
@@ -13,13 +13,35 @@ body{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    margin-top:120px
+    margin:120px auto 0 auto;
+    max-width: 500px;
 }
 .stats-container{
     padding:30px;
     border-radius: 20px;
     border:2px solid gold;
     display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.details{
+    width: 100%;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: lightblue;
+    border-radius: 10px;
+   transition: all 0.3s ease; 
 }
 #numbers{
      width:100px;
@@ -31,4 +53,36 @@ body{
      border-radius: 50%;
      font-size: 30px;
      font-weight: bold;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: blue;
+    border: 1px solid purple;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    color: beige;
+    font-weight: bold;
+    font-size: 30px;
+    outline: none;
+    
 }
